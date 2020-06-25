@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <meta
+        http-equiv="Content-Security-Policy"
+        content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="css/titleBar/titleBar.css" type="text/css" />
+    <link rel="stylesheet" href="css/app/app.css" type="text/css" />
+</head>
+<body>
+    <div class="titleBar">
+        <span class="name">npm.ly</span>
+        <span class="buttons">
+            <span class="minimize">
+                <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fal"
+                    data-icon="window-minimize"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M496 480H16c-8.8 0-16-7.2-16-16s7.2-16 16-16h480c8.8 0 16 7.2 16 16s-7.2 16-16 16z"
+                    ></path>
+                </svg>
+            </span>
+            <span class="maximize"
+                ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fal"
+                    data-icon="window-maximize"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="svg-inline--fa fa-window-maximize fa-w-16 fa-2x"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm16 400c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V192h448v240zM32 160V80c0-8.8 7.2-16 16-16h416c8.8 0 16 7.2 16 16v80H32z"
+                        class=""
+                    ></path>
+                </svg>
+            </span>
+            <span class="close">
+                <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fal"
+                    data-icon="times"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                    ></path>
+                </svg>
+            </span>
+        </span>
+    </div>
+    <!-- <input type="text" placeholder="package name" />
+    <button onclick="download()">download</button>
+    <p id="package">download progress:</p>
+    <p id="installed">Packag:</p>
+
+    <script>
+        const { exec } = require("child_process");
+        function download() {
+            const val = document.querySelector("input").value;
+            const query = "npm i --save-dev " + val;
+            document.querySelector("#package").innerHTML += "downloading";
+            exec(query, (err, stdout, stderr) => {
+                if (err) {
+                    document.querySelector("#package").innerHTML = stderr;
+                }
+                document.querySelector("#package").innerHTML += stdout;
+            });
+        }
+
+        exec("npm ls --depth=0 --silent", (err, stdout, stderr) => {
+            stdout = stdout.split("--");
+            document.querySelector("#installed").innerHTML += stdout;
+        });
+    </script> -->
+    <script src="js/titleBar/titleBar.js" type="text/javascript"></script>
+</body>

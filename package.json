@@ -1,0 +1,27 @@
+{
+    "name": "npm.ly",
+    "version": "1.0.0",
+    "description": "A npm UI made with electron",
+    "main": "index.js",
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/whoanuragverma/npm.ly.git"
+    },
+    "author": "Anurag Verma",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/whoanuragverma/npm.ly/issues"
+    },
+    "homepage": "https://github.com/whoanuragverma/npm.ly#readme",
+    "dependencies": {
+        "electron": "^9.0.5"
+    },
+    "devDependencies": {
+        "electron-reload": "^1.5.0",
+        "nodemon": "^2.0.4"
+    }
+}

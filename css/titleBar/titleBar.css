@@ -1,0 +1,59 @@
+.titleBar {
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #000000;
+    color: #eeeeee;
+    text-align: center;
+    height: 20px;
+    padding: 5px;
+}
+
+.titleBar .minimize svg {
+    width: 16px;
+}
+.titleBar .maximize svg {
+    padding-top: 8px;
+    width: 13px;
+}
+.titleBar .minimize svg {
+    width: 16px;
+}
+.titleBar .close svg {
+    width: 12px;
+    padding-top: 5px;
+}
+.titleBar .minimize {
+    position: fixed;
+    top: 0px;
+    right: 92px;
+    padding-bottom: 10.5px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.titleBar .maximize {
+    position: fixed;
+    top: 0px;
+    right: 45px;
+    padding-bottom: 5.5px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.titleBar .close {
+    position: fixed;
+    top: 0px;
+    right: 1px;
+    padding-bottom: 2.5px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.titleBar .minimize:hover,
+.titleBar .maximize:hover {
+    background-color: #575757;
+    transition-duration: 0.3s;
+}
+.titleBar .close:hover {
+    background-color: rgb(219, 30, 30);
+    transition-duration: 0.3s;
+}
