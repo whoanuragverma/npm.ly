@@ -3,11 +3,11 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background-color: #eeeeee;
+    background-color: #ffffff;
     color: #000;
     font-weight: 400;
     text-align: center;
-    height: 20px;
+    height: 30px;
     padding: 5px;
     -webkit-user-select: none;
     -webkit-app-region: drag;
@@ -17,18 +17,14 @@
     float: left;
 }
 .titleBar .minimize svg {
-    width: 16px;
+    width: 12px;
 }
 .titleBar .maximize svg {
     padding-top: 8px;
     width: 11px;
 }
-.titleBar .minimize svg {
-    width: 16px;
-}
 .titleBar .close svg {
     width: 12px;
-    padding-top: 5px;
 }
 .titleBar .minimize {
     -webkit-app-region: no-drag;
@@ -36,15 +32,15 @@
     top: 0px;
     right: 92px;
     padding-bottom: 10.5px;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .titleBar .maximize {
     -webkit-app-region: no-drag;
     position: fixed;
     top: 0px;
     right: 45px;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -53,7 +49,7 @@
     position: fixed;
     top: 0px;
     right: 0px;
-    padding-bottom: 2.5px;
+    padding-bottom: 4.5px;
     padding-left: 16px;
     padding-right: 16px;
 }

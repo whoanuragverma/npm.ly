@@ -1,4 +1,41 @@
 body {
     margin: 0;
-    background-color: black;
+    background-color: #f3f3f3;
+}
+@font-face {
+    font-family: Google Sans;
+    src: url(../../media/GoogleSans-Regular.ttf);
+}
+.global .card {
+    margin: 25px;
+    box-shadow: 7px 7px 10px 0px #d7d7d7d9;
+}
+h5.display-6 {
+    font-family: "Google Sans";
+    font-weight: 600;
+    font-size: 1.35rem;
+}
+.display-5 {
+    font-family: "Google Sans";
+    font-size: 1.2em;
+    font-weight: 200;
+}
+.version.lead {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding-top: 7px;
+    font-size: 0.8rem;
+    padding-left: 10px;
+}
+.badge-small {
+    margin-left: 10px;
+    font-size: 0.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 200;
+}
+.badge-delete {
+    cursor: pointer;
 }

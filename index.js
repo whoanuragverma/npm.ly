@@ -7,9 +7,11 @@ function createWindow() {
         height: 600,
         minWidth: 600,
         minHeight: 600,
+        maxWidth: 900,
         icon: "media/icon-lg.png",
         webPreferences: {
             nodeIntegration: true,
+            enableRemoteModule: true,
         },
         frame: false,
     });
