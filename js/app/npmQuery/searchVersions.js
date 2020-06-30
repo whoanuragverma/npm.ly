@@ -1,4 +1,4 @@
-const searchVersion = (name, callback) => {
+const searchVersion = (name) => {
     const command = "npm view " + name + " versions --json";
     return new Promise((resolve, reject) => {
         exec(command, (err, stdout, stderr) => {
