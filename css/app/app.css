@@ -6,9 +6,12 @@ body {
     font-family: Google Sans;
     src: url(../../media/GoogleSans-Regular.ttf);
 }
-.global .card {
+.card {
     margin: 25px;
     box-shadow: 7px 7px 10px 0px #d7d7d7d9;
+}
+.input-group {
+    width: 100% !important;
 }
 h5.display-6 {
     font-family: "Google Sans";

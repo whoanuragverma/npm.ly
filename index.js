@@ -5,7 +5,7 @@ function createWindow() {
     let win = new BrowserWindow({
         width: 800,
         height: 600,
-        minWidth: 600,
+        minWidth: 800,
         minHeight: 600,
         maxWidth: 900,
         icon: "media/icon-lg.png",

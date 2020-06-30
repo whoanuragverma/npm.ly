@@ -6,7 +6,8 @@ const loadModule = () => {
         let res = stdout;
         res = stdout.split("-- ");
         if (res[1].startsWith("(empty)")) {
-            document.querySelector(".result").innerHTML = "Nothing Installed!";
+            document.querySelector(".result").innerHTML =
+                "No Package Installed!";
         } else {
             for (var i = 1; i < res.length; i++) {
                 let t = res[i].split("@");

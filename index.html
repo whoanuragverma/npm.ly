@@ -67,6 +67,82 @@
             </span>
         </span>
     </div>
+    <section class="install">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="display-6">Install a Package</h5>
+                <div class="dropdown-divider"></div>
+                <form class="form-inline main">
+                    <div class="input-group">
+                        <input
+                            class="form-control"
+                            placeholder="Search for package..."
+                            aria-describedby="addon"
+                        />
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" id="addon">
+                                Go&nbsp;
+                                <div
+                                    class="spinner-border text-light"
+                                    role="status"
+                                    style="
+                                        width: 20px;
+                                        height: 20px;
+                                        display: none;
+                                    "
+                                >
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="resultSearch mt-3" style="display: none;">
+                    <strong>Package Name:</strong>
+                    <span class="name1"></span><br />
+                    <strong>Latest Version:</strong>
+                    <span class="version"></span><br />
+                    <strong>Install:</strong>
+                    <form class="form-inline sub mt-2">
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="globalInstall"
+                        />
+                        <label class="form-check-label" for="globalInstall"
+                            >Install Globally</label
+                        >
+                        <input
+                            class="form-check-input ml-3"
+                            type="checkbox"
+                            id="depInstall"
+                        />
+                        <label class="form-check-label" for="depInstall"
+                            >Add to dependencies</label
+                        >
+                        <select
+                            class="form-control ml-3"
+                            id="selectVersion"
+                            style="max-width: 200px;"
+                        >
+                        </select>
+                        <button class="btn btn-success ml-5 install" id="iMain">
+                            Install
+                        </button>
+                    </form>
+                    <div class="progress mt-3" style="display: none;">
+                        <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 0%;"
+                        >
+                            Installing Package
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="global">
         <div class="card">
             <div class="card-body">
@@ -122,15 +198,15 @@
     <script src="js/titleBar/titleBar.min.js" type="text/javascript"></script>
 
     <script
-        src="js/app/npmQuery/latestVersion.js"
+        src="js/app/npmQuery/latestVersion.min.js"
         type="text/javascript"
     ></script>
     <script
-        src="js/app/npmQuery/uninstallGlobal.js"
+        src="js/app/npmQuery/uninstallGlobal.min.js"
         type="text/javascript"
     ></script>
     <script
-        src="js/app/npmQuery/searchVersions.js"
+        src="js/app/npmQuery/searchVersions.min.js"
         type="text/javascript"
     ></script>
     <script
@@ -138,7 +214,8 @@
         type="text/javascript"
     ></script>
     <script
-        src="js/app/npmQuery/viewPackagesGlobal.js"
+        src="js/app/npmQuery/viewPackagesGlobal.min.js"
         type="text/javascript"
     ></script>
+    <script src="js/installForm.js" type="text/javascript"></script>
 </body>

@@ -32,6 +32,7 @@ const createCard = (name, version, index, lenght) => {
     latestVersion(name)
         .then((res) => {
             if (version !== res.split("\n")[0]) {
+                b.addEventListener("click", () => updateGlobal(name));
                 b.appendChild(e);
             }
         })
